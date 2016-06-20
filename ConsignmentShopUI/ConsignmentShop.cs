@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsignmentShopLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace ConsignmentShopUI
 {
     public partial class ConsignmentShop : Form
     {
+        private Store store = new Store();
+
         public ConsignmentShop()
         {
             InitializeComponent();
@@ -33,6 +36,11 @@ namespace ConsignmentShopUI
         }
 
         private void shoppingCartListboxLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SetupData()
         {
 
         }
