@@ -113,5 +113,16 @@ namespace ConsignmentShopUI
             if (!inCart) { shoppingCartData.Add(selectedItem); }
             cartBinding.ResetBindings(false);
         }
+
+        private void makePurchase_Click(object sender, EventArgs e)
+        {
+            foreach(Item x in shoppingCartData)
+            {
+                x.Sold = true;
+            }
+            shoppingCartData = new List<Item>();
+            cartBinding.ResetBindings(false);
+            MessageBox.Show("Items have been purchased!");
+        }
     }
 }
