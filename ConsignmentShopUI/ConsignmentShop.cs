@@ -99,7 +99,9 @@ namespace ConsignmentShopUI
 
         private void addToCart_Click(object sender, EventArgs e)
         {
-            shoppingCartData.Add((Item)itemsListbox.SelectedItem);
+            Item selectedItem = (Item)itemsListbox.SelectedItem;
+            shoppingCartData.Add(selectedItem);
+            cartBinding.ResetBindings(false);
         }
     }
 }
