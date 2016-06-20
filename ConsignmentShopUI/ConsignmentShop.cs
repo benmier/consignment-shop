@@ -23,7 +23,7 @@ namespace ConsignmentShopUI
             InitializeComponent();
             SetupData();
 
-            itemsBinding.DataSource = store.Items;
+            itemsBinding.DataSource = store.Items.Where(x => x.Sold==false).ToList();
             itemsListbox.DataSource = itemsBinding;
             itemsListbox.DisplayMember = "Display";
             itemsListbox.ValueMember = "Display";
@@ -122,6 +122,7 @@ namespace ConsignmentShopUI
             }
             shoppingCartData.Clear();
             cartBinding.ResetBindings(false);
+            itemsBinding.ResetBindings(false);
             MessageBox.Show("Items have been purchased!");
         }
     }
