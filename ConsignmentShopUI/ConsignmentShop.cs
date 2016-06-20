@@ -24,8 +24,8 @@ namespace ConsignmentShopUI
             itemsBinding.DataSource = store.Items;
             itemsListbox.DataSource = itemsBinding;
 
-            itemsListbox.DisplayMember = "";
-            itemsListbox.ValueMember = "";
+            itemsListbox.DisplayMember = "Display";
+            itemsListbox.ValueMember = "Display";
         }
 
         private void ConsignmentShop_Load(object sender, EventArgs e)
