@@ -100,7 +100,17 @@ namespace ConsignmentShopUI
         private void addToCart_Click(object sender, EventArgs e)
         {
             Item selectedItem = (Item)itemsListbox.SelectedItem;
-            shoppingCartData.Add(selectedItem);
+            bool inCart = false;
+            foreach(Item x in shoppingCartData)
+            {
+                if (selectedItem == x)
+                {
+                    MessageBox.Show("Cannot add duplicates!");
+                    inCart = true;
+                    break;
+                }
+            }
+            if (!inCart) { shoppingCartData.Add(selectedItem); }
             cartBinding.ResetBindings(false);
         }
     }
