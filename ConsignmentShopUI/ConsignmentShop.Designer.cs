@@ -35,6 +35,8 @@
             this.shoppingCartListboxLabel = new System.Windows.Forms.Label();
             this.shoppingCartListbox = new System.Windows.Forms.ListBox();
             this.makePurchase = new System.Windows.Forms.Button();
+            this.vendorListboxLabel = new System.Windows.Forms.Label();
+            this.vendorListbox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // headerText
@@ -108,11 +110,33 @@
             this.makePurchase.UseVisualStyleBackColor = true;
             this.makePurchase.Click += new System.EventHandler(this.makePurchase_Click);
             // 
+            // vendorListboxLabel
+            // 
+            this.vendorListboxLabel.AutoSize = true;
+            this.vendorListboxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vendorListboxLabel.Location = new System.Drawing.Point(43, 540);
+            this.vendorListboxLabel.Name = "vendorListboxLabel";
+            this.vendorListboxLabel.Size = new System.Drawing.Size(93, 25);
+            this.vendorListboxLabel.TabIndex = 8;
+            this.vendorListboxLabel.Text = "Vendors";
+            this.vendorListboxLabel.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // vendorListbox
+            // 
+            this.vendorListbox.FormattingEnabled = true;
+            this.vendorListbox.ItemHeight = 25;
+            this.vendorListbox.Location = new System.Drawing.Point(48, 568);
+            this.vendorListbox.Name = "vendorListbox";
+            this.vendorListbox.Size = new System.Drawing.Size(335, 279);
+            this.vendorListbox.TabIndex = 7;
+            // 
             // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 499);
+            this.ClientSize = new System.Drawing.Size(916, 877);
+            this.Controls.Add(this.vendorListboxLabel);
+            this.Controls.Add(this.vendorListbox);
             this.Controls.Add(this.makePurchase);
             this.Controls.Add(this.shoppingCartListboxLabel);
             this.Controls.Add(this.shoppingCartListbox);
@@ -139,6 +163,8 @@
         private System.Windows.Forms.Label shoppingCartListboxLabel;
         private System.Windows.Forms.ListBox shoppingCartListbox;
         private System.Windows.Forms.Button makePurchase;
+        private System.Windows.Forms.Label vendorListboxLabel;
+        private System.Windows.Forms.ListBox vendorListbox;
     }
 }
 
