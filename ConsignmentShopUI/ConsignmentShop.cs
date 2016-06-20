@@ -48,8 +48,37 @@ namespace ConsignmentShopUI
             store.Vendors.Add(new Vendor { FirstName = "John", LastName = "Nash" });
             store.Vendors.Add(new Vendor { FirstName = "Gale", LastName = "McDonald" });
 
-            store.Items.Add(new Vendor { Title = "Moby Dick", Description = "A book about a whale", Price = 4.50, Owner = store.Vendors[0]});
+            store.Items.Add(new Item
+            {
+                Title = "Moby Dick",
+                Description = "A book about a whale",
+                Price = 4.50M,
+                Owner = store.Vendors[0]
+            });
 
+            store.Items.Add(new Item
+            {
+                Title = "Tom Sawyer",
+                Description = "A book about a boy",
+                Price = 3.80M,
+                Owner = store.Vendors[1]
+            });
+
+            store.Items.Add(new Item
+            {
+                Title = "A Tale of Two Cities",
+                Description = "A book about a revolution",
+                Price = 5.20M,
+                Owner = store.Vendors[2]
+            });
+
+            store.Items.Add(new Item
+            {
+                Title = "Harry Potter: Book 2",
+                Description = "A book about a wizard",
+                Price = 1.50M,
+                Owner = store.Vendors[3]
+            });
         }
     }
 }
