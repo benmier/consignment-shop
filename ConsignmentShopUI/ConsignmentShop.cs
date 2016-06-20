@@ -120,7 +120,7 @@ namespace ConsignmentShopUI
             {
                 x.Sold = true;
             }
-            shoppingCartData = new List<Item>();
+            shoppingCartData.Clear();
             cartBinding.ResetBindings(false);
             MessageBox.Show("Items have been purchased!");
         }
