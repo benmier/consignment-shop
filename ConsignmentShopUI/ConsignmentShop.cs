@@ -121,6 +121,7 @@ namespace ConsignmentShopUI
                 x.Sold = true;
             }
             shoppingCartData.Clear();
+            itemsBinding.DataSource = store.Items.Where(x => x.Sold == false).ToList();
             cartBinding.ResetBindings(false);
             itemsBinding.ResetBindings(false);
             MessageBox.Show("Items have been purchased!");
