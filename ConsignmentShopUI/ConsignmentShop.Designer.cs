@@ -114,7 +114,7 @@
             // 
             this.vendorListboxLabel.AutoSize = true;
             this.vendorListboxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vendorListboxLabel.Location = new System.Drawing.Point(43, 540);
+            this.vendorListboxLabel.Location = new System.Drawing.Point(43, 462);
             this.vendorListboxLabel.Name = "vendorListboxLabel";
             this.vendorListboxLabel.Size = new System.Drawing.Size(93, 25);
             this.vendorListboxLabel.TabIndex = 8;
@@ -125,7 +125,7 @@
             // 
             this.vendorListbox.FormattingEnabled = true;
             this.vendorListbox.ItemHeight = 25;
-            this.vendorListbox.Location = new System.Drawing.Point(48, 568);
+            this.vendorListbox.Location = new System.Drawing.Point(48, 490);
             this.vendorListbox.Name = "vendorListbox";
             this.vendorListbox.Size = new System.Drawing.Size(335, 279);
             this.vendorListbox.TabIndex = 7;
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 877);
+            this.ClientSize = new System.Drawing.Size(916, 780);
             this.Controls.Add(this.vendorListboxLabel);
             this.Controls.Add(this.vendorListbox);
             this.Controls.Add(this.makePurchase);

@@ -121,14 +121,19 @@ namespace ConsignmentShopUI
 
         private void makePurchase_Click(object sender, EventArgs e)
         {
-            foreach(Item x in shoppingCartData)
+            foreach(Item item in shoppingCartData)
             {
-                x.Sold = true;
+                item.Sold = true;
+                item.Owner.PaymentDue += item.Price * (decimal)item.Owner.Commission;
+
             }
             shoppingCartData.Clear();
+
             itemsBinding.DataSource = store.Items.Where(x => x.Sold == false).ToList();
             cartBinding.ResetBindings(false);
             itemsBinding.ResetBindings(false);
+            vendorsBinding.ResetBindings(false);
+
             MessageBox.Show("Items have been purchased!");
         }
 
