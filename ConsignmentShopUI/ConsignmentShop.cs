@@ -18,6 +18,7 @@ namespace ConsignmentShopUI
         BindingSource itemsBinding = new BindingSource();
         BindingSource cartBinding = new BindingSource();
         BindingSource vendorsBinding = new BindingSource();
+        private decimal storeProfit = 0;
 
         public ConsignmentShop()
         {
@@ -135,6 +136,7 @@ namespace ConsignmentShopUI
             itemsBinding.ResetBindings(false);
             vendorsBinding.ResetBindings(false);
 
+            storeProfitValue.Text = string.Format("$" + storeProfit);
             MessageBox.Show("Items have been purchased!");
         }
 
