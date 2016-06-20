@@ -25,10 +25,14 @@ namespace ConsignmentShopUI
 
             itemsBinding.DataSource = store.Items;
             itemsListbox.DataSource = itemsBinding;
-            cartBinding.DataSource = shoppingCartData;
-
             itemsListbox.DisplayMember = "Display";
             itemsListbox.ValueMember = "Display";
+
+            cartBinding.DataSource = shoppingCartData;
+            shoppingCartListbox.DataSource = cartBinding;
+            shoppingCartListbox.DisplayMember = "Display";
+            shoppingCartListbox.ValueMember = "Display";
+
         }
 
         private void ConsignmentShop_Load(object sender, EventArgs e)
@@ -91,6 +95,11 @@ namespace ConsignmentShopUI
             });
 
             store.Name = "Seconds are Beter";
+        }
+
+        private void addToCart_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
