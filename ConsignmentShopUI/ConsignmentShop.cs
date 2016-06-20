@@ -14,11 +14,18 @@ namespace ConsignmentShopUI
     public partial class ConsignmentShop : Form
     {
         private Store store = new Store();
+        BindingSource itemsBinding = new BindingSource();
 
         public ConsignmentShop()
         {
             InitializeComponent();
             SetupData();
+
+            itemsBinding.DataSource = store.Items;
+            itemsListbox.DataSource = itemsBinding;
+
+            itemsListbox.DisplayMember = "";
+            itemsListbox.ValueMember = "";
         }
 
         private void ConsignmentShop_Load(object sender, EventArgs e)
@@ -79,6 +86,8 @@ namespace ConsignmentShopUI
                 Price = 1.50M,
                 Owner = store.Vendors[3]
             });
+
+            store.Name = "Seconds are Beter";
         }
     }
 }
