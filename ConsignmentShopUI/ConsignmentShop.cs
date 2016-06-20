@@ -14,7 +14,9 @@ namespace ConsignmentShopUI
     public partial class ConsignmentShop : Form
     {
         private Store store = new Store();
+        private List<Item> shoppingCartData = new List<Item>();
         BindingSource itemsBinding = new BindingSource();
+        BindingSource cartBinding = new BindingSource();
 
         public ConsignmentShop()
         {
@@ -23,6 +25,7 @@ namespace ConsignmentShopUI
 
             itemsBinding.DataSource = store.Items;
             itemsListbox.DataSource = itemsBinding;
+            cartBinding.DataSource = shoppingCartData;
 
             itemsListbox.DisplayMember = "Display";
             itemsListbox.ValueMember = "Display";
