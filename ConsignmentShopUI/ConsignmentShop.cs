@@ -125,6 +125,7 @@ namespace ConsignmentShopUI
             {
                 item.Sold = true;
                 item.Owner.PaymentDue += item.Price * (decimal)item.Owner.Commission;
+                storeProfit += item.Price * (1 - (decimal)item.Owner.Commission);
 
             }
             shoppingCartData.Clear();

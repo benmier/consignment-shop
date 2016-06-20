@@ -37,6 +37,8 @@
             this.makePurchase = new System.Windows.Forms.Button();
             this.vendorListboxLabel = new System.Windows.Forms.Label();
             this.vendorListbox = new System.Windows.Forms.ListBox();
+            this.storeProfitLabel = new System.Windows.Forms.Label();
+            this.storeProfit = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headerText
@@ -130,11 +132,33 @@
             this.vendorListbox.Size = new System.Drawing.Size(335, 279);
             this.vendorListbox.TabIndex = 7;
             // 
+            // storeProfitLabel
+            // 
+            this.storeProfitLabel.AutoSize = true;
+            this.storeProfitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storeProfitLabel.Location = new System.Drawing.Point(544, 490);
+            this.storeProfitLabel.Name = "storeProfitLabel";
+            this.storeProfitLabel.Size = new System.Drawing.Size(127, 25);
+            this.storeProfitLabel.TabIndex = 9;
+            this.storeProfitLabel.Text = "Store Profit:";
+            // 
+            // storeProfit
+            // 
+            this.storeProfit.AutoSize = true;
+            this.storeProfit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storeProfit.Location = new System.Drawing.Point(677, 490);
+            this.storeProfit.Name = "storeProfit";
+            this.storeProfit.Size = new System.Drawing.Size(66, 25);
+            this.storeProfit.TabIndex = 10;
+            this.storeProfit.Text = "$0.00";
+            // 
             // ConsignmentShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(916, 780);
+            this.Controls.Add(this.storeProfit);
+            this.Controls.Add(this.storeProfitLabel);
             this.Controls.Add(this.vendorListboxLabel);
             this.Controls.Add(this.vendorListbox);
             this.Controls.Add(this.makePurchase);
@@ -165,6 +189,8 @@
         private System.Windows.Forms.Button makePurchase;
         private System.Windows.Forms.Label vendorListboxLabel;
         private System.Windows.Forms.ListBox vendorListbox;
+        private System.Windows.Forms.Label storeProfitLabel;
+        private System.Windows.Forms.Label storeProfit;
     }
 }
 
