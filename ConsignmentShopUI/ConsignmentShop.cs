@@ -18,6 +18,7 @@ namespace ConsignmentShopUI
         public ConsignmentShop()
         {
             InitializeComponent();
+            SetupData();
         }
 
         private void ConsignmentShop_Load(object sender, EventArgs e)
@@ -42,7 +43,10 @@ namespace ConsignmentShopUI
 
         private void SetupData()
         {
-
+            store.Vendors.Add(new Vendor { FirstName = "Bill", LastName = "Jones" });
+            store.Vendors.Add(new Vendor { FirstName = "Jim", LastName = "Howe" });
+            store.Vendors.Add(new Vendor { FirstName = "John", LastName = "Nash" });
+            store.Vendors.Add(new Vendor { FirstName = "Gale", LastName = "McDonald" });
         }
     }
 }
