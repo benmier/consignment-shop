@@ -1,2 +1,10 @@
 C:\Users\Ben\Downloads\Assignments\Cracking the Coding Interview\C# Training\ConsignmentShop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.exe.config
 C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.exe.config
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.exe
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\bin\Debug\ConsignmentShopUI.pdb
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.csprojResolveAssemblyReference.cache
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.ConsignmentShop.resources
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.Properties.Resources.resources
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.csproj.GenerateResource.Cache
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.exe
+C:\Users\Ben\Documents\Visual Studio 2015\Projects\ConsignmentShop\ConsignmentShopUI\obj\Debug\ConsignmentShopUI.pdb
