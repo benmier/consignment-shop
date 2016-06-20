@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConsignmentShopLibrary
 {
-    public class Vendor
+    public class Store
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public double Commission { get; set; }
+        public string Name { get; set; }
+        public List<Vendor> Vendors { get; set; }
+        public List<Item> Items { get; set; }
 
     }
 }
